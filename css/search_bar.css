@@ -1,0 +1,41 @@
+@import url(./reset.css);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(117, 91, 91);
+  font-family: Arial;
+}
+
+.search_bar {
+  margin: 40px 0 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search_icon {
+  width: 90px;
+  height: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(219, 196, 196);
+}
+
+input[type="text"]{
+  font-size: 18px;
+  width: 250px;
+  height: 40px;
+  border: 2px solid #b2b2b2;
+}
+
+.items{
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #30313d;
+  text-align: center;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search</title>
+  <link rel="stylesheet" href="./css/search_bar.css">
+</head>
+
+<body>
+
+  <div id="app" class="search_block">
+    <div class="search_bar">
+      <div class="search_icon">Search:</div>
+      <input v-model.trim="input.text" type="text">
+      <!--綁定data中的input.text並去除頭尾空白字元-->
+    </div>
+    <div v-for="item in titleMenu" class="items">{{item.name}}</div>
+    <!--用v-for去渲染出所篩選的項目-->
+  </div>
+
+  <script src="./js/vue.js"></script>
+  <script src="./js/search_bar.js"></script>
+</body>
+
+</html>
